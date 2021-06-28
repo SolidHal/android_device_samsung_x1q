@@ -20,3 +20,6 @@ TARGET_SCREEN_DENSITY := 640
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+
+# inherit from the proprietary version
+include vendor/samsung/sm8250-common/BoardConfigVendor.mk

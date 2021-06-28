@@ -1,5 +1,5 @@
 # Inherit common device configuration
-$(call inherit-product, device/samsung/sm8250-common/sm8250.mk)
+$(call inherit-product, device/samsung/sm8250-common/common.mk)
 
 # Proprietary blobs
 $(call inherit-product-if-exists, vendor/samsung/x1q/x1q-vendor.mk)
