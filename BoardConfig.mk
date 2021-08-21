@@ -1,5 +1,5 @@
 # Inherit common board flags
-include device/samsung/sm8250-common/BoardConfigCommon.mk
+-include device/samsung/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/x1q
 
@@ -22,4 +22,5 @@ TARGET_SCREEN_DENSITY := 640
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # inherit from the proprietary version
-include vendor/samsung/sm8250-common/BoardConfigVendor.mk
+# TODO: when we have prop files for x1q, uncomment this
+# -include vendor/samsung/sm8250-common/BoardConfigVendor.mk

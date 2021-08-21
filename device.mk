@@ -1,9 +1,3 @@
-# Inherit common device configuration
-$(call inherit-product, device/samsung/sm8250-common/common.mk)
-
-# Proprietary blobs
-$(call inherit-product-if-exists, vendor/samsung/x1q/x1q-vendor.mk)
-
 ### DALVIK
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -27,3 +21,8 @@ PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
+# Inherit common device configuration
+$(call inherit-product, device/samsung/sm8250-common/common.mk)
+
+# Proprietary blobs
+$(call inherit-product-if-exists, vendor/samsung/x1q/x1q-vendor.mk)
